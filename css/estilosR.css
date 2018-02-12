@@ -11,25 +11,12 @@ text-align: center;
 
     }
 
-.contenedor1{
-      display: flex;
-      flex-direction: row;
-      background-color: #82c3a6;
-    }
-
-.contenedor1 > div {
-	text-align: center;
-	 width: 100%;
-}
-.contenedor1 img {
-  box-shadow: 3px 5px 10px 0px rgba(0, 0, 0, 0.9);
-margin: 50px;
-
-}
 .contenedor2 {
+  max-width: 100%;
+  height: auto;
   background-color:  #d5c75f;
   border: 1px;
-overflow: hidden;
+  overflow: hidden;
   display: flex;
   justify-content: center;
 
@@ -69,13 +56,12 @@ nav a{
   font-size: 20px;
 }
 .Footer{
-  margin:0;
   background-color: #C6d5c5;
-  height:200px;
-  width: 900px;
-  margin: 0 auto;
-  overflow: hidden;
-    display: flex;
+  max-width: 100%;
+  height: 170px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 #Contacto{
 padding: 10px;
@@ -114,4 +100,29 @@ width: 200px;
 .vinculos{
   text-decoration: none;
 color: #090909;
+}
+@media screen and (max-width:900px) {
+
+#contenido{ max-width: 100%;
+
+
+}
+
+  .contenedor2 {
+    min-width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .Footer{
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+#imagen2{
+  margin: auto;
 }

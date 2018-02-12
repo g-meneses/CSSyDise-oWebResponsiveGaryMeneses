@@ -7,23 +7,26 @@ body{
       width: 900px;
 margin: auto;
 text-align: center;
-
-
     }
 
 .contenedor1{
       display: flex;
+      justify-content: space-around;
       flex-direction: row;
       background-color: #82c3a6;
     }
 
-.contenedor1 > div {
-	text-align: center;
-	 width: 100%;
+.img1 {
+  display: inline-block;
+
+}
+.img1 img{
+  max-width: 100%;
 }
 .contenedor1 img {
   box-shadow: 3px 5px 10px 0px rgba(0, 0, 0, 0.9);
 margin: 50px;
+max-width: 100%;
 
 }
 .contenedor2 {
@@ -83,18 +86,13 @@ nav a{
   font-size: 20px;
 }
 .Footer{
-  margin:0;
+
   background-color: #C6d5c5;
-  height:200px;
-  width: 900px;
-  border-radius: 0px 0px 10px 10px;
-  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
   display: flex;
-  /*overflow: hidden;*/
-flex-direction: row;
-flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
 }
 #Contacto{
@@ -140,11 +138,43 @@ height: 150px;
   text-decoration: none;
   color: #090909;
 }
-@media (max_width: 900px) {
-  #contenido{
-    margin-left: 3em;
-  }
-.titulo{
-width:100%;
+
+@media screen and (max-width:900px) {
+
+#contenido{ max-width: 100%;
+
+
 }
+  .contenedor1{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        max-width: 100%;
+        height: auto;
+      }
+  .img1{
+    max-width: 100%;
+  }
+  .img1 img{
+    max-width: 80%;
+    height: auto;
+  }
+  .contenedor2 {
+    min-width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .Footer{
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+#imagen2{
+  margin: auto;
 }

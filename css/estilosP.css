@@ -80,10 +80,17 @@ nav a{
   background-color: #C6d5c5;
   height:200px;
   width: 900px;
+  border-radius: 0px 0px 10px 10px;
   margin: 0 auto;
-  overflow: hidden;
-    display: flex;
+  display: flex;
+  /*overflow: hidden;*/
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+
 }
+
 #Contacto{
 padding: 10px;
 text-align: left;
@@ -121,4 +128,21 @@ width: 200px;
 .vinculos{
   text-decoration: none;
 color: #090909;
+}
+@media screen and (max-width:900px)
+{
+#contenido{ max-width: 100%;
+}
+.contenedor2{
+  max-width: 100%;
+  height:auto;
+}
+.footer{
+  max-width:100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 }
